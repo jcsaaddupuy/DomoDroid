@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="80dip" >
+
+    <ImageView
+        android:id="@+id/Imagedevice"
+        android:layout_width="45sp"
+        android:layout_height="45sp"
+        android:layout_alignParentLeft="true" />
+
+    <LinearLayout
+        android:id="@+id/iconLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_toRightOf="@id/Imagedevice"
+        android:orientation="vertical"
+        android:paddingLeft="10sp" 
+        >
+
+        <TextView
+            android:id="@+id/deviceName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/deviceRef"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:autoLink="web"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/commandsLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+</RelativeLayout>
